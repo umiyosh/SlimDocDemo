@@ -1,4 +1,4 @@
-api {
+seqdiag {
   app -> api [label = "some api"]
   api -> memcached [label = "exists User?"]
   memcached -> api [label = "not exists"]

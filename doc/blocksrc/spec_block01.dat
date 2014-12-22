@@ -1,4 +1,4 @@
-block {
+blockdiag {
   top         [shape = roundedbox]
   credit          [shape = roundedbox]
   faq             [shape = roundedbox]

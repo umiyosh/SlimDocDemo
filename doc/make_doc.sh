@@ -2,13 +2,13 @@
 
 doxygen
 
-for diagfile in document/seqsrc/*
+for diagfile in doc/seqsrc/*
 do
   imgfile=$(echo $diagfile| perl -pe 's/\.dat$/.png/g'|perl -pe 's{/seqsrc/}{/img/}g')
   seqdiag $diagfile -o $imgfile
 done
 
-for diagfile in document/blocksrc/*
+for diagfile in doc/blocksrc/*
 do
   imgfile=$(echo $diagfile| perl -pe 's/\.dat$/.png/g'|perl -pe 's{/blocksrc/}{/img/}g')
   blockdiag $diagfile -o $imgfile
