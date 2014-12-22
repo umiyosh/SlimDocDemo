@@ -4,8 +4,7 @@ seqdiag {
   memcached -> api [label = "not exists"]
   api -> DB [label = "select User"]
   api <- DB [label = "User"]
-  api -> memcached [label = "exists Users"]
-  api <- DB [label = "user"]
+  api -> memcached [label = "add User"]
   app <- api [label = "user"]
 }
 
