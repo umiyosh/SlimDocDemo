@@ -1,0 +1,23 @@
+block {
+  top         [shape = roundedbox]
+  credit          [shape = roundedbox]
+  faq             [shape = roundedbox]
+  help            [shape = roundedbox]
+  agreement       [shape = roundedbox]
+  link            [shape = roundedbox]
+  group Webview {
+    label = "Webview";
+    color = "red";
+    top
+    faq
+    help
+    credit
+    agreement
+    link
+  }
+  top.php -> faq [ label = "tap"]
+  top.php -> credit [ label = "tap"]
+  top.php -> agreement [ label = "tap"]
+  top.php -> link [ label = "tap"]
+  faq     -> help [ label = "tap"]
+}
