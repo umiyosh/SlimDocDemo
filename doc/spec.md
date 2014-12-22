@@ -4,6 +4,6 @@
 
 ## 動作図
 
-![シーケンス図](../../doc/img/spec_seq01.png)
-![画面遷移図図](../../doc/img/spec_block01.png)
+![シーケンス図](../../workspace/doc/img/spec_seq01.png)
+![画面遷移図図](../../workspace/doc/img/spec_block01.png)
 
