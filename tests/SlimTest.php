@@ -91,7 +91,8 @@ class SlimTest extends PHPUnit_Framework_TestCase
      ************************************************/
 
     /**
-     * Test version constant is string
+     * @test Test version constant is string
+     * * markdownなども書けます
      */
     public function testHasVersionConstant()
     {
@@ -99,7 +100,13 @@ class SlimTest extends PHPUnit_Framework_TestCase
     }
 
     /**
-     * Test default instance properties
+     * @test Test default instance properties
+     *
+     * ~~~
+     * code block
+     * ~~~
+     *
+     * @todo fix me
      */
     public function testDefaultInstanceProperties()
     {
@@ -222,7 +229,7 @@ class SlimTest extends PHPUnit_Framework_TestCase
                 ),
             )
         );
-        
+
         // Test recursive batch behaviour
         $s->config($override, true);
 
@@ -1237,7 +1244,7 @@ class SlimTest extends PHPUnit_Framework_TestCase
      *
      * This asserts that the same middleware can NOT be queued twice (usually by accident).
      * Circular middleware stack causes a troublesome to debug PHP Fatal error:
-     * 
+     *
      * > Fatal error: Maximum function nesting level of '100' reached. aborting!
      */
     public function testFailureWhenAddingCircularMiddleware()
